@@ -17,7 +17,7 @@ app.get("/",(req,res)=>{
 
 app.use("/travel",travelRouter)
 
-app.listen(8000 || `0.0.0.0`,async()=>{
+app.listen(8000,async()=>{
     try{
      await connection
      console.log("connected to db and running on port 8000")
